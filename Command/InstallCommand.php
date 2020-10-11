@@ -32,7 +32,7 @@ class InstallCommand extends Command
 
     private function downloadZip(OutputInterface $output, string $tag): string
     {
-        $output->write('Downloading Froala Editor...');
+        $output->write('Downloading Froala Editor mzgk...');
         $httpClient = HttpClient::create();
         $zip = $httpClient->request('GET', 'https://github.com/froala/wysiwyg-editor/archive/' . $tag . '.zip')->getContent();
 
